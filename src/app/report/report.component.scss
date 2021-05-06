@@ -1,0 +1,64 @@
+$Component_width:500px;
+$Header_title_color:#3B4E8A;
+$element_padding:20px;
+$Header_bgcolor:#BDC3c9;
+$primary:#007bff;
+$warning:#6c757d;
+$footer_bgcolor:#1DA4DD;
+$configrable:true;
+
+
+.panel-default {
+    width:$Component_width;
+}
+.crossButton{
+    padding-right:20px;
+}
+.panel-heading {
+    padding-left: 5%;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:$Header_bgcolor;
+    color:$Header_title_color;
+}
+.tableHeader_class {
+    color:$Header_title_color;
+}
+.tdStyleClass{
+    padding-top:$element_padding;
+}
+.footerContainer{
+    //float:right;
+    margin-left:65%;
+}
+.btn{
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin-left:5px;
+    color:white;
+}
+.btn-outline-save{
+    background-color:$footer_bgcolor;
+}
+.btn-outline-cancel{
+    background-color:$warning;
+}
+.footer{
+    background-color:$footer_bgcolor;
+    color:white;
+    font-size: 14px;
+    height:30px;
+}
+.checkbox_class{
+    width:60px;
+}
+@if $configrable {
+    .footer_content{
+        margin:30px;
+        height:100px;
+    }
+}
