@@ -22,6 +22,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     Ng2SearchPipeModule
   ],
   providers: [],
+  entryComponents:[ReportComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
