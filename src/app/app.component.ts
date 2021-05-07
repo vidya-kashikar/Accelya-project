@@ -11,20 +11,27 @@ import { ReportComponent } from './report/report.component';
 export class AppComponent {
   title = 'Accelya-Project';
   configuration = {
-    table_heading:'Activity chart',
+    table_heading:'Activity List',
     footer_content:'Use the same goods Decription',
     showcheckbox:false,
     limit:10,
-    component_width:'800px'
+    component_width:'500px',
+    showSearchBox:true
   }
   constructor(private modalService:NgbModal){}
   open() { 
-    const modalRef =  this.modalService.open(ReportComponent,{ size: 'lg'});
+    //,{ size: 'lg'}
+    const modalRef =  this.modalService.open(ReportComponent);
     modalRef.componentInstance.configuration = this.configuration;
   }
 
   toggleEditable(event:any) {
     //alert(event.target.checked)
     this.configuration.showcheckbox = true ? event.target.checked:false;
-}
+  }
+
+  toggleSearch(event:any) {
+    this.configuration.showSearchBox = true ? event.target.checked:false;
+  }
+
 }

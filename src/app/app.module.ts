@@ -7,11 +7,13 @@ import { ReportComponent } from './report/report.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ActivityDetailsComponent } from './activity-details/activity-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReportComponent
+    ReportComponent,
+    ActivityDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 <div class="config-body">
-    <h4>Configuration For Reaport</h4>
+    <h4>Configuration For Report</h4>
     <form>
     <div class="form-group">
     <label for="configuration.table_heading">
@@ -54,6 +54,11 @@
           checked=configuration.showcheckbox [(ngModel)]="configuration.showcheckbox" class="form-check-input" id="showcheckbox">
           <label class="form-check-label" for="showcheckbox">Show Ist colomn Checkbox</label>
        </div>
+       <div class="form-group form-check">
+         <input type="checkbox" value=configuration.showSearchBox  (change)="toggleSearch($event)" 
+         checked=configuration.showSearchBox [(ngModel)]="configuration.showSearchBox" class="form-check-input" id="showSearchBox">
+         <label class="form-check-label" for="showSearchBox">Show Search Box</label>
+      </div>
        <div style='margin-left: auto'>
           <button class="btn btn-primary" (click)="open()"> Generate Report</button>
        </div>

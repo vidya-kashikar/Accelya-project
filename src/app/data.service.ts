@@ -10,7 +10,7 @@ export class DataService {
   constructor(private http : HttpClient) {
   }
   Url ='https://jsonplaceholder.typicode.com/users';
-  //'https://jsonplaceholder.typicode.com/todos';
+  //Url ='https://jsonplaceholder.typicode.com/todos';
   getPhotos(): Observable<any> {
         return this.http.get(this.Url);
   }

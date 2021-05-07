@@ -1,9 +1,10 @@
-<div class="search-class" *ngIf=configuration.showSearchBox>
-  <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search" >
-</div>
-<div class="panel panel-default" style="margin-top:10px; width:${configuration.table_heading}" >
-<div class="panel-heading">
-  <b>{{configuration.table_heading}}</b>
+
+<div ngIfclass="panel panel-default" style="margin-top:10px;" [ngStyle]="{width:configuration.component_width}">
+   <div class="search-class" *ngIf=configuration.showSearchBox>
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search" >
+    </div>
+   <div class="panel-heading">
+  <b>{{configuration.table_heading}}</b>  
   <button type="button" class="close"
      aria-label="Close" (click)="activeModal.dismiss('Cross click')">
   <span class="crossButton" aria-hidden="true">
@@ -23,7 +24,6 @@
         </thead>
         <tbody>
            <tr *ngFor="let data of tableData| filter:searchText">
-              <!-- <td *ngIf="showRowCheckbox"><input type=checkbox></td> -->
               <td class="tdStyleClass" *ngFor="let col of dataColomns">
                  <div *ngIf="configuration.showcheckbox && col==='type'"><input type=checkbox></div>
                  <div>{{data[col]}}</div>
