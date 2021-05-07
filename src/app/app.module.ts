@@ -24,7 +24,7 @@ import { ActivityDetailsComponent } from './activity-details/activity-details.co
     Ng2SearchPipeModule
   ],
   providers: [],
-  entryComponents:[ReportComponent],
+  entryComponents:[ReportComponent,ActivityDetailsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

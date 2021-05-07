@@ -30,7 +30,7 @@
     Table Rows 
     </label>
     <div class="input-group">
-       <input id="component_width"
+       <input id="limit"
        [(ngModel)]="configuration.limit"
        class="form-control"
        placeholder="Enter component width  Here"
@@ -50,17 +50,17 @@
           >
        </div>
        <div class="form-group form-check">
-          <input type="checkbox" value=configuration.showcheckbox  (change)="toggleEditable($event)" 
+          <input type="checkbox" name="showcheckbox" value=configuration.showcheckbox  (change)="toggleEditable($event)" 
           checked=configuration.showcheckbox [(ngModel)]="configuration.showcheckbox" class="form-check-input" id="showcheckbox">
           <label class="form-check-label" for="showcheckbox">Show Ist colomn Checkbox</label>
        </div>
        <div class="form-group form-check">
-         <input type="checkbox" value=configuration.showSearchBox  (change)="toggleSearch($event)" 
+         <input type="checkbox" name="showSearchBox" value=configuration.showSearchBox  (change)="toggleSearch($event)" 
          checked=configuration.showSearchBox [(ngModel)]="configuration.showSearchBox" class="form-check-input" id="showSearchBox">
          <label class="form-check-label" for="showSearchBox">Show Search Box</label>
       </div>
-       <div style='margin-left: auto'>
-         <button  class="btn btn-primary" (click)="open()"> Generate Report</button>
+       <div style='margin-left: 20px'>
+         <button class="btn btn-primary" (click)="open()"> Generate Report</button>
          <button style='margin-left: 20px' class="btn btn-primary" (click)="openForm()"> Generate Form</button>
       </div>
     </div>
