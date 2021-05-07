@@ -21,7 +21,7 @@
        <input type="text" id="footer_content"
        [(ngModel)]="configuration.footer_content"
        class="form-control"
-       placeholder="Enter footer_content  Here"
+       placeholder="Enter footer_content Here"
        name="footer_content" 
        >
     </div>
@@ -60,6 +60,8 @@
          <label class="form-check-label" for="showSearchBox">Show Search Box</label>
       </div>
        <div style='margin-left: auto'>
-          <button class="btn btn-primary" (click)="open()"> Generate Report</button>
-       </div>
+         <button  class="btn btn-primary" (click)="open()"> Generate Report</button>
+         <button style='margin-left: 20px' class="btn btn-primary" (click)="openForm()"> Generate Form</button>
+      </div>
     </div>
+    

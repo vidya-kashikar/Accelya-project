@@ -1,4 +1,3 @@
-$Component_width:500px;
 $Header_title_color:#3B4E8A;
 $element_padding:20px;
 $Header_bgcolor:#BDC3c9;
@@ -7,10 +6,6 @@ $warning:#6c757d;
 $footer_bgcolor:#1DA4DD;
 $configrable:true;
 
-
-.panel-default {
-   width:$Component_width;
-}
 .crossButton{
     padding-right:20px;
 }
@@ -28,7 +23,7 @@ $configrable:true;
     padding-top:$element_padding;
 }
 .footerContainer{
-    margin-left:65%;
+    float: right;
 }
 .btn{
     user-select: none;
@@ -64,7 +59,3 @@ $configrable:true;
         padding:50px;
     }
 }
-.footerContainer {
-    background-color:#ECEDEF;
-}
-

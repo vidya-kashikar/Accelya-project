@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ActivityDetailsComponent implements OnInit {
 
   constructor() { }
-  dataHeaders=['text','Number','Inputs','Checkbox','Radio']
-  //tableData=[{'text':'text'},{'Number':12345},{Inputs},{}];
+  dataHeaders=['CheckBoxType','text','Number','Inputs','Checkbox','Radio']
+  tableDataFixed=[[{'CheckBoxType':''},{'text':'text'},{'Number':12345},{'Inputs':''},{'Checkbox':''},{'Radio':''}],
+  [{'CheckBoxType':''},{'text':'text'},{'Number':12345789},{'Inputs':''},{'Checkbox':''},{'Radio':''}],
+  [{'CheckBoxType':''},{'text':'text'},{'Number':12345789},{'Inputs':''},{'Checkbox':''},{'Radio':''}],
+  [{'CheckBoxType':''},{'text':'text'},{'Number':12345789},{'Inputs':''},{'Checkbox':''},{'Radio':''}],
+  [{'CheckBoxType':''},{'text':'text'},{'Number':12345},{'Inputs':''},{'Checkbox':''},{'Radio':''}],
+  [{'CheckBoxType':''},{'text':'text'},{'Number':12345789},{'Inputs':''},{'Checkbox':''},{'Radio':''}],
+  [{'CheckBoxType':''},{'text':'text'},{'Number':12345789},{'Inputs':''},{'Checkbox':''},{'Radio':''}],
+  [{'CheckBoxType':''},{'text':'text'},{'Number':12345789},{'Inputs':''},{'Checkbox':''},{'Radio':''}]
+];;
   ngOnInit(): void {
   }
 

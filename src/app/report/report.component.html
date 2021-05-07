@@ -1,5 +1,7 @@
-
-<div ngIfclass="panel panel-default" style="margin-top:10px;" [ngStyle]="{width:configuration.component_width}">
+<div>
+<div ngIfclass="panel panel-default" style="margin-top:10px;"
+ [ngStyle]="{width:configuration.component_width}">
+ 
    <div class="search-class" *ngIf=configuration.showSearchBox>
       <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search" >
     </div>
@@ -43,3 +45,4 @@
 <button class="btn btn-outline-cancel" (click)="activeModal.dismiss('Cross click')">Cancel</button>
 <button class="btn btn-outline-save">Apply</button>
 <div>
+   </div>

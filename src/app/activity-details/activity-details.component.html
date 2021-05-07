@@ -1,0 +1,29 @@
+
+  <div class="activity_table" style="margin-top:10px;" >
+  <div class="panel-body" style="position:relative">
+    <div class="table-responsive">
+       <table class="table">
+          <thead >
+             <tr>
+                <th class='theadClass' *ngFor="let column of dataHeaders">
+                   {{column}} 
+                </th>
+             </tr>
+          </thead>
+            <tr *ngFor="let data of tableDataFixed">
+                <td *ngFor="let col of dataHeaders">
+                <div  *ngIf="col=='CheckBoxType'"><input type='checkbox'></div>
+                <div *ngIf="col=='text'">{{col}}</div>
+                <div *ngIf="col=='Number'">{{col}}</div>
+                <div *ngIf="col=='Inputs'"><input type='text' placeholder='Entering a value...'></div>
+                <div *ngIf="col=='Checkbox'"><input type='checkbox'></div>
+                <div *ngIf="col=='Radio'"><input type='radio'></div>
+             </tr>
+       </table>
+    </div>
+</div>
+
+  <!-- <div class="footerContainer">
+  <button class="btn btn-outline-cancel" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+  <button class="btn btn-outline-save">Apply</button>
+  <div>  -->
