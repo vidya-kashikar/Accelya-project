@@ -1,4 +1,4 @@
-$Component_width:500px;
+$Component_width:800px;
 $Header_title_color:#3B4E8A;
 $element_padding:20px;
 $Header_bgcolor:#BDC3c9;
@@ -28,7 +28,6 @@ $configrable:true;
     padding-top:$element_padding;
 }
 .footerContainer{
-    //float:right;
     margin-left:65%;
 }
 .btn{
@@ -52,13 +51,20 @@ $configrable:true;
     color:white;
     font-size: 14px;
     height:30px;
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
 }
 .checkbox_class{
     width:60px;
 }
 @if $configrable {
     .footer_content{
-        margin:30px;
-        height:100px;
+        margin-left:-53px;
+        padding:50px;
     }
 }
+.footerContainer {
+    background-color:#ECEDEF;
+}
+

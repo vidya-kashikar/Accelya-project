@@ -10,18 +10,21 @@ import { ReportComponent } from './report/report.component';
 })
 export class AppComponent {
   title = 'Accelya-Project';
-
+  configuration = {
+    table_heading:'Activity chart',
+    footer_content:'Use the same goods Decription',
+    showcheckbox:false,
+    limit:10,
+    component_width:'800px'
+  }
   constructor(private modalService:NgbModal){}
   open() { 
-    const modalRef =  this.modalService.open(ReportComponent);
-    /*modalRef.componentInstance.hero = this.hero;
-    let hero_Id = this.findHeroId();
-    modalRef.componentInstance.passEntry.subscribe((receivedEntry: any) => {
-      this.heroes.push({"id":hero_Id+1,...receivedEntry});
-
-      console.log(receivedEntry);
-      });
-        
-      this.hero = {name:''};*/
+    const modalRef =  this.modalService.open(ReportComponent,{ size: 'lg'});
+    modalRef.componentInstance.configuration = this.configuration;
   }
+
+  toggleEditable(event:any) {
+    //alert(event.target.checked)
+    this.configuration.showcheckbox = true ? event.target.checked:false;
+}
 }
